@@ -1,0 +1,23 @@
+.form{
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 30%;
+  margin: auto;
+  margin-top: 3em;
+}
+.form-field{
+  display: flex;
+  flex-direction: column;
+}
+.form-field label{
+  font-size: 1.15em;
+  font-weight: 500 ;
+}
+
+.form-field input{
+  height: 1.5em;
+  border-radius: 5px;
+  font-size: 1em;
+}

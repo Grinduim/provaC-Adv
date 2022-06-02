@@ -1,0 +1,96 @@
+.form {
+  grid-area: form;
+}
+
+.logo {
+  justify-content: center;
+  grid-area: logo;
+  display: flex;
+}
+
+.logo img {
+  padding: 1em;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 4em;
+}
+
+.login-button{
+  grid-area: login;
+  align-self: center;
+  justify-self: center;
+  width: 150px;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: black;
+  background-color: lightgray;
+}
+.login-button:hover{
+  background-color: gray;
+}
+
+.card {
+  border-top: .4em solid lightslategray;
+  margin: auto auto;
+  margin-top: 2em;
+  grid-gap: 1em;
+  padding: 0em 1em;
+  display: grid;
+  width: 40em;
+  height: 45em;
+  border-radius: 1em;
+  box-shadow: 1em 1em 1em 1em lightgray;
+
+  grid-template-columns: auto;
+  grid-template-rows: 50% 25%;
+  grid-template-areas:
+      "logo"
+      "form"
+      "login";
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.form div{
+  display:  flex;
+  justify-content: space-between;
+  gap: 1.5em;
+  align-content: center;
+  width: 90%;
+
+}
+
+.form input{
+  display: flex;
+  justify-content: end;
+  width: 30em;
+  height: 1.9em;
+  border: .1em solid black;
+  border-radius: .5em;
+  margin-top: .7em;
+
+}
+
+.form-label{
+  justify-content: start;
+  align-self: center;
+  display: flex;
+}
+
+.link{
+  text-decoration: none;
+  color: rgb(21, 116, 148);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+

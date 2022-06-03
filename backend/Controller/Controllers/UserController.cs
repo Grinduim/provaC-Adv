@@ -30,9 +30,7 @@ public class UserController: ControllerBase
             return result;
         }
         else{
-            var result = new ObjectResult(0);
-            Response.Headers.Add("Access-Control-Allow-Origin", "*");
-            return result;
+            return BadRequest();
         }
         
     }

@@ -1,0 +1,46 @@
+
+/* CRIAR A SOLUÇÃO */
+dotnet new sln -n "nomeProjeto"          
+-----------------------------------
+/* CRIAR CLASSLIB MODEL */
+dotnet new classlib -n "Model"          
+-------------------------------------
+/* ADICIONAR MODEL NA SOLUÇÃO */
+dotnet sln add "Model/Model.csproj"     
+-------------------------------------
+dotnet restore                          
+------------------------------------
+/* CRIAR CLASSLIB DTO */
+dotnet new classlib -n DTO
+---------------------------------
+/* CRIAR CLASSLIB ENUMS */
+dotnet new classlib -n Enums
+----------------------------------
+/* ADICIONAR ENUMS NA SOLUÇÃO */
+dotnet sln add Enums/Enums.csproj
+----------------------------------
+/* ADICIONAR DTO NA SOLUÇÃO */
+dotnet sln add DTO/DTO.csproj
+------------------------------------
+/* ADICIONAR INTERFACES NA SOLUÇÃO */
+dotnet sln add Interfaces/Interfaces.csproj
+---------------------------------------
+/* REFERENCIAR CLASSLIBS NA MODEL */
+[\Model]
+dotnet add reference ../Enums/Enums.csproj
+dotnet add reference ../Interfaces/Interfaces.csproj
+----------------------------------------------------
+/* ADICIONAR PACOTE ENTITY FRAMEWORK */
+dotnet add package Microsoft.EntityFrameworkCore
+
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+------------------------------------------------------------
+/* CRIAR WEBAPI CONTROLLER */
+dotnet new webapi -n Controller
+--------------------------------------
+/* ADICIONAR PACOTE ASPNETCORE */
+dotnet add package Microsoft.AspNetCore.Mvc.NewtonsoftJson --version6.0.4
+-------------------------------------------------------------------------
+/* ADICIONAR ASPNETCORE AUTHENTICATION */
+dotnet add package Microsoft.AspNetCore.Authentication --version 2.2.0
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer --version 2.2.0

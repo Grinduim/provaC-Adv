@@ -2885,19 +2885,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vinic\\.nuget\\packages\\": {}
+    "C:\\Users\\disrct\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vinic\\Desktop\\provaC-Adv\\backend\\Controller\\Controller.csproj",
+      "projectUniqueName": "C:\\Users\\disrct\\Desktop\\provaC-Adv\\backend\\Controller\\Controller.csproj",
       "projectName": "Controller",
-      "projectPath": "C:\\Users\\vinic\\Desktop\\provaC-Adv\\backend\\Controller\\Controller.csproj",
-      "packagesPath": "C:\\Users\\vinic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vinic\\Desktop\\provaC-Adv\\backend\\Controller\\obj\\",
+      "projectPath": "C:\\Users\\disrct\\Desktop\\provaC-Adv\\backend\\Controller\\Controller.csproj",
+      "packagesPath": "C:\\Users\\disrct\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\disrct\\Desktop\\provaC-Adv\\backend\\Controller\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\vinic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\disrct\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2911,8 +2911,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\vinic\\Desktop\\provaC-Adv\\backend\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\vinic\\Desktop\\provaC-Adv\\backend\\Model\\Model.csproj"
+            "C:\\Users\\disrct\\Desktop\\provaC-Adv\\backend\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\disrct\\Desktop\\provaC-Adv\\backend\\Model\\Model.csproj"
             }
           }
         }
@@ -2966,7 +2966,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   },

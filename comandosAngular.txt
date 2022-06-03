@@ -1,0 +1,27 @@
+//execute cmd as adm - USER: liq1ct / PASSWORD: qcbl97800879
+--------------------------------------------------------------------------------
+npm config set proxy http://USUARIO_DE_REDE:SENHA_DE_REDE@10.224.200.26:8080
+
+npm config set https-proxy=http://USUARIO_DE_REDE:SENHA_DE_REDE@10.224.200.26:8080
+
+npm config set http-proxy=http://USUARIO_DE_REDE:SENHA_DE_REDE@10.224.200.26:8080
+
+npm config set strict-ssl="false"
+--------------------------------------------------------------------------------------
+npm install -g @angular/cli
+
+npm install axios
+
+ng version
+--------------------------------
+ng new front-marketPlace
+yes / CSS
+
+ng serve
+
+ng generate component top-bar
+
+ng generate component products-list
+
+ng generate component product-detail
+----------------------------------------------------------------------------------------------

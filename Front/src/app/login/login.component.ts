@@ -28,17 +28,19 @@ export class LoginComponent implements OnInit {
       },
       data : data
     };
+    console.log("paasou aq");
     var instance = this;
     axios(config)
     .then(function (response) {
       console.log("okay");
       let id = response.data;
+      console.log(id);
       localStorage.setItem('id', id);
       var route = '/profile/' + id;
       instance.router.navigate([route]);
     })
     .catch(function (error) {
-      console.log(error);
+      alert("Login invalido!");
     });
 
   }

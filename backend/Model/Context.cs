@@ -10,7 +10,7 @@ namespace Model
         {
             if (!optionsBuilder.IsConfigured)
             {
-                var servername = "DESKTOP-S4T02R7\\SQLEXPRESS";
+                var servername = Environment.MachineName;
                 optionsBuilder.UseSqlServer("Server =" + servername + ";Database=ProvaCSharp2;Integrated Security=True");
             }
         }

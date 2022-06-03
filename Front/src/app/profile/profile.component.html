@@ -1,28 +1,30 @@
 <div *ngIf="user">
   <div class="details">
-   
     <div class="profile">
       <div>
-        <img src="https://www.publicdomainpictures.net/pictures/340000/nahled/dog-silhouette-logo.png" alt="" id="image">
+        <img
+          src="https://www.princeton.edu/sites/default/files/styles/half_2x/public/images/2022/02/KOA_Nassau_2697x1517.jpg?itok=iQEwihUn"
+          alt=""
+          id="image"
+        />
       </div>
-      <h3>Nome: {{user.name}}</h3>
-      <p>Raça: {{user.breed}}</p>
-      <p>Idade: {{user.age}}</p>
+      <h3>{{ user.name }}</h3>
+      <p>{{ user.breed }}</p>
+      <p>{{ user.age }} anos</p>
     </div>
     <div class="details-follow">
       <div>
-        <h3>Seguidores</h3>
         <p>1330</p>
+        <h3>Seguidores</h3>
       </div>
       <div>
-        <h3>Seguindo</h3>
         <p>1400</p>
+        <h3>Seguindo</h3>
       </div>
       <div>
-        <h3>Publicações</h3>
         <p>136</p>
+        <h3>Publicações</h3>
       </div>
     </div>
   </div>
-
 </div>

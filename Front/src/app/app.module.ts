@@ -19,7 +19,7 @@ import { ProfileComponent } from './profile/profile.component';
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      {path: "register", component: FormsComponent},
+      {path: "", component: FormsComponent},
       {path: "login", component: LoginComponent},
       {path: "profile/:userid", component:ProfileComponent},
     ])

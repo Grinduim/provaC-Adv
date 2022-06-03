@@ -20,6 +20,7 @@
   height: 1.5em;
   border-radius: 5px;
   font-size: 1em;
+  border-color: lightgray;
 }
 
 .btn-container{
@@ -28,6 +29,7 @@
   width: 33%;
   margin: auto;
   margin-top: 1.3em;
+
 }
 
 .btn-container button{
@@ -37,6 +39,7 @@
   font-weight: 600;
   font-size: 1em;
   border-radius: 10px;
+
 }
 
 .btn-container button:hover{

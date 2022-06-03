@@ -24,7 +24,7 @@ export class ProfileComponent implements OnInit {
     var data = '';
     var config = {
       method: 'get',
-      url: 'http://localhost:5148/user/get/' + id,
+      url: 'http://localhost:5148/user/getuser/' + id,
       headers: {},
       data: data,
     };

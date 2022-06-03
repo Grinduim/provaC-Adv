@@ -1,14 +1,28 @@
 <div *ngIf="user">
   <div class="details">
-  <img src="" alt="" id="image">
-  <div>
-    <h3 >{{user.name}}</h3>
-    <p> {{user.breed}}</p>
-    <p>{{user.age}}</p>
+   
+    <div class="profile">
+      <div>
+        <img src="https://www.publicdomainpictures.net/pictures/340000/nahled/dog-silhouette-logo.png" alt="" id="image">
+      </div>
+      <h3>Nome: {{user.name}}</h3>
+      <p>Raça: {{user.breed}}</p>
+      <p>Idade: {{user.age}}</p>
+    </div>
+    <div class="details-follow">
+      <div>
+        <h3>Seguidores</h3>
+        <p>1330</p>
+      </div>
+      <div>
+        <h3>Seguindo</h3>
+        <p>1400</p>
+      </div>
+      <div>
+        <h3>Publicações</h3>
+        <p>136</p>
+      </div>
+    </div>
   </div>
-  </div>
-  <div class="details-follow">
 
-  </div>
 </div>
-<p>teste</p>

@@ -21,3 +21,25 @@
   border-radius: 5px;
   font-size: 1em;
 }
+
+.btn-container{
+  display: flex;
+  justify-content: space-evenly;
+  width: 33%;
+  margin: auto;
+  margin-top: 1.3em;
+}
+
+.btn-container button{
+  width: 5em;
+  height:  2em;
+  background-color: lightgray;
+  font-weight: 600;
+  font-size: 1em;
+  border-radius: 10px;
+}
+
+.btn-container button:hover{
+  background-color: gray;
+}
+

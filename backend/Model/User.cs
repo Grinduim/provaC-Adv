@@ -25,9 +25,9 @@ public class User
 
     public int Login(){
         using(var contex = new Context()){
-            var User = contex.Users.Where(u => u.UserName == this.UserName);
+            var User = contex.Users.Where(u => u.UserName == this.UserName && u.Password == this.Password).FirstOrDefault();
             if(User !=null){
-                return 1;
+                return User.Id;
             }
             else return -1;
         }

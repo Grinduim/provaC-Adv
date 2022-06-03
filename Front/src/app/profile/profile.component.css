@@ -1,0 +1,29 @@
+.details{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-areas:"Perfil" "Seguidor" ;
+}
+
+.details-follow{
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+}
+
+.profile{
+    margin-left: 1em;
+    grid-area: Perfil;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 0.5em  0.5em  0.5em  0.5em lightgray;
+}
+
+.profile img {
+    width:  10em;
+}

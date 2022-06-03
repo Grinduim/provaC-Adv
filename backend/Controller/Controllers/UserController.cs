@@ -11,41 +11,39 @@ using System.Linq;
 [Route("user")]
 public class UserController: ControllerBase
 {
-    
-    public IConfiguration _configuration; //add
-
-    public UserController(IConfiguration config){ //add
-        _configuration = config;
-    }
-
 
     [HttpPost]
     [Route("register")]
-    public int RegisterClient([FromBody] User user){
+    public IActionResult RegisterClient([FromBody] User user){
         var id = user.save();
-        return 1;
+        var response = new ObjectResult(id);
+        Response.Headers.Add("Access-Control-Allow-Origin", "*");
+        return response;
     }
     [HttpPost]
     [Route("login")]
-    public object Login([FromBody] User user){
+    public IActionResult  Login([FromBody] User user){
         var response =  user.Login();
         if(response != -1){
-            return "Sucess";
+            var result = new ObjectResult(response);
+            Response.Headers.Add("Access-Control-Allow-Origin", "*");
+            return result;
         }
         else{
-           return BadRequest(); 
+            var result = new ObjectResult(0);
+            Response.Headers.Add("Access-Control-Allow-Origin", "*");
+            return result;
         }
         
     }
 
     [HttpGet]
-    [Route("get/{id}")]
-    public object Login(int id){
-        var teste = Model.User.FindById(id);
-        if(teste != null){
-            return teste;
-        }else{
-            return BadRequest();
-        }
+    [Route("getuser/{id}")]
+    public IActionResult GetUser(int id){
+        var user = Model.User.FindById(id);
+        Console.WriteLine(user);
+        var response = new ObjectResult(user);
+        Response.Headers.Add("Access-Control-Allow-Origin", "*");
+        return response;
     }
 }

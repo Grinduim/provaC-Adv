@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import axios from 'axios';
 @Component({
   selector: 'app-forms',
@@ -6,7 +7,7 @@ import axios from 'axios';
   styleUrls: ['./forms.component.css'],
 })
 export class FormsComponent implements OnInit {
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 
@@ -26,8 +27,7 @@ export class FormsComponent implements OnInit {
       Password: password.value,
       Image: photo.value
     });
-    console.log(data)
-
+    
     var config = {
       method: 'post',
       url: 'http://localhost:5148/user/register',
@@ -36,13 +36,12 @@ export class FormsComponent implements OnInit {
       },
       data: data,
     };
-
+    let instance = this;
     axios(config)
       .then(function (response) {
-        console.log(JSON.stringify(response.data));
+        instance.router.navigate(['/login']);
       })
       .catch(function (error) {
-        console.log(error.message);
       });
   }
 

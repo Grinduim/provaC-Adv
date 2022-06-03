@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import axios from 'axios';
 @Component({
   selector: 'app-login',
@@ -6,7 +7,7 @@ import axios from 'axios';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 
@@ -27,10 +28,14 @@ export class LoginComponent implements OnInit {
       },
       data : data
     };
-
+    var instance = this;
     axios(config)
     .then(function (response) {
-      console.log(JSON.stringify(response.data));
+      console.log("okay");
+      let id = response.data;
+      localStorage.setItem('id', id);
+      var route = '/profile/' + id;
+      instance.router.navigate([route]);
     })
     .catch(function (error) {
       console.log(error);
